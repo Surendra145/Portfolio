@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">  
+
+    <style>
+      
+
+    /* Adding a geometric box pattern */
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, 
+        transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+        background-size: 40px 40px; /* Size of the box effect */
+        opacity: 0.3; /* Subtle effect */
+        z-index: -1;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="intro">
+            <h2>I'm Sambhaiahpalem Surendra</h2>
+            <p>Bangalore, India</p>
+            <p>Full Stack Developer</p>
+            <a href="https://drive.google.com/uc?export=download&id=1R4s5i1HZjHAI-h0n6X_v51AFgjZW3NET" 
+               class="cv-btn" 
+               target="_blank">
+               Download CV
+            </a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+        <p>A dedicated Python Full Stack and Frontend Developer with a strong foundation in 
+            software development. Holding a Bachelor's degree in Electronics and Communication Engineering, I am eager to 
+            leverage my skills in building dynamic web applications and optimizing user experiences while contributing to innovation 
+            and growth..</p>
+    </section>
+
+    <section id="skills">
+        <h2 onclick="toggleSection('skills-content')">Skills ⏬</h2>
+        <div id="skills-content" class="collapsible-content">
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, Java (Basics)</li>
+                <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Database Management:</strong> MySQL</li>
+                <li><strong>Hardware:</strong> Embedded C, MATLAB</li>
+            </ul>
+        </div>
+    </section>        
+
+    <section id="certifications">
+        <h2 onclick="toggleSection('certifications-content')">Certifications ⏬</h2>
+        <div id="certifications-content" class="collapsible-content">
+            <ul>
+                <li>Artificial Intelligence Certification from YoungMinds Technology Solutions Pvt Ltd.</li>
+                <li>Data Science With Python Certification from Verzeo & IBM.</li>
+                <li>Matlab Course Certification from BMSIT&M</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 onclick="toggleSection('education-content')">Education ⏬</h2>
+        <div id="education-content" class="collapsible-content">
+            <p><strong>B.Tech in Electronics and Communication Engineering</strong></p>
+            <p>BMS Institute of Technology, Bangalore | 2024</p>
+            <p><strong>CGPA:</strong> 7.60</p>
+        </div>
+    </section>               
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <img src="images/project1.jpg" alt="Project 1">
+            <h3>Healthcare Monitoring With Saline-level Inclusive Tracking System</h3>
+            <p>Aim of our work is to monitor the human body temperature, Pulse Rate, and ECG while also tracking the glucose level of the patient.</p>
+            <p><strong>Technology Used:</strong> C/C++, Python, MQTT, SQLite/MySQL, IoT Platforms for remote monitoring and data visualization.</p>
+        </div>
+        <div class="project">
+            <img src="images/project2.jpg" alt="Project 2">
+            <h3>Single Image Dehazing Using Dark Channel Prior</h3>
+            <p>Single image dehazing is a computer vision technique used to enhance the visibility of images in hazy or foggy conditions.</p>
+            <p>One of the most popular methods for single image dehazing is the Dark Channel Prior.</p>
+            <p><strong>Techniques Used:</strong> Python, OpenCV, NumPy, Matplotlib for visualizing results.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:surendrasam4621@gmail.com">surendrasam4621@gmail.com</a></p>
+        <p>Phone: <a href="tel:+919676323161">+91 9676323161</a></p>
+        <p>GitHub: <a href="https://github.com/Surendra145" target="_blank">Surendra145</a></p>
+    </section>    
+
+    <script src="script.js"></script>
+</body>
+</html>
